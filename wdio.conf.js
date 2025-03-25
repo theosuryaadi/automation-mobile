@@ -57,12 +57,12 @@ exports.config = {
   capabilities: [
     {
       platformName: "Android",
-      "appium:deviceName": "Emulator", // Ganti dengan device/emulator yang sesuai
-      "appium:platformVersion": "11.0", // Sesuaikan dengan versi Android
+      "appium:deviceName": "Emulator", // Emulator name
+      "appium:platformVersion": "11.0", // Android Version
       "appium:automationName": "UiAutomator2",
       "appium:app": path.join(
         process.cwd(),
-        "./app/android/Login Demo_1.0_APKPure.apk"
+        "./app/android/Login Demo_1.0_APKPure.apk" // Path to APK file
       ),
       "appium:noReset": true,
     },
